@@ -3,71 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Directory Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Local Business Directory</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </head>
-<body class="font-[Inter] antialiased bg-gray-50">
+<body>
+    
     <header class="fixed w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
         <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="/" class="text-xl font-bold text-blue-600">Directory</a>
+            <a href="https://test-acc-12349.github.io/local-business-directory-2025-05-06-c0f9e/" class="text-xl font-bold text-blue-600">Directory</a>
             <div class="hidden md:flex space-x-6">
-                <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Home</a>
-                <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Categories</a>
-                <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">About</a>
-                <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Contact</a>
+                <a href="#home" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Home</a>
+                <a href="#listings" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Categories</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">About</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Contact</a>
             </div>
+            <button class="mobile-menu-button md:hidden" aria-label="Toggle menu">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
         </nav>
+        <div class="mobile-menu hidden md:hidden bg-white w-full border-t border-gray-100">
+            <a href="#home" class="block px-4 py-2 text-gray-600 hover:bg-blue-50">Home</a>
+            <a href="#listings" class="block px-4 py-2 text-gray-600 hover:bg-blue-50">Categories</a>
+            <a href="#about" class="block px-4 py-2 text-gray-600 hover:bg-blue-50">About</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-600 hover:bg-blue-50">Contact</a>
+        </div>
     </header>
 
-    <section class="relative h-[50vh] bg-gradient-to-r from-blue-600 to-blue-800 flex items-center justify-center">
-        <div class="absolute inset-0 bg-black/20"></div>
+    <section id="home" class="relative h-[50vh] bg-gradient-to-r from-blue-600 to-blue-800 flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-800/80"></div>
         <div class="relative text-center px-4">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">Local Business Directory</h1>
-            <p class="text-xl md:text-2xl text-white/90 mb-8">Discover the best local businesses in one place</p>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 drop-shadow-lg">Local Business Directory</h1>
+            <p class="text-xl md:text-2xl text-white/90 mb-8 drop-shadow">Discover and Connect with Premier Local Businesses</p>
             <a href="https://directory.com/register" class="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">Get Listed Today</a>
         </div>
     </section>
 
-    <section class="container mx-auto px-4 py-16">
+    <section id="listings" class="container mx-auto px-4 py-16">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-                <div class="p-6">
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden transform hover:scale-[1.02] border border-gray-100">
+                <div class="relative p-6">
+                    <span class="absolute top-2 right-2 bg-blue-100 text-blue-600 text-xs font-semibold px-2 py-1 rounded">Technology</span>
                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Sigma SEO AI Writer</h3>
                     <p class="text-gray-600 mb-4">Effortlessly Create Quality Content That Ranks #1 On Google</p>
                     <a href="https://sigmaseo.io" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300">Learn More</a>
                 </div>
             </div>
-            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-                <div class="p-6">
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden transform hover:scale-[1.02] border border-gray-100">
+                <div class="relative p-6">
+                    <span class="absolute top-2 right-2 bg-amber-100 text-amber-600 text-xs font-semibold px-2 py-1 rounded">Food</span>
                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Cafe Delights</h3>
                     <p class="text-gray-600 mb-4">Experience gourmet coffee and fresh pastries daily</p>
                     <a href="https://cafedelights.com" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300">Learn More</a>
                 </div>
             </div>
-            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-                <div class="p-6">
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden transform hover:scale-[1.02] border border-gray-100">
+                <div class="relative p-6">
+                    <span class="absolute top-2 right-2 bg-green-100 text-green-600 text-xs font-semibold px-2 py-1 rounded">Services</span>
                     <h3 class="text-xl font-semibold text-gray-800 mb-2">TechFix Repairs</h3>
                     <p class="text-gray-600 mb-4">Professional gadget and computer repair services</p>
                     <a href="https://techfixrepairs.com" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300">Learn More</a>
                 </div>
             </div>
-            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-                <div class="p-6">
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden transform hover:scale-[1.02] border border-gray-100">
+                <div class="relative p-6">
+                    <span class="absolute top-2 right-2 bg-emerald-100 text-emerald-600 text-xs font-semibold px-2 py-1 rounded">Retail</span>
                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Green Thumb Nursery</h3>
                     <p class="text-gray-600 mb-4">Premium plants and garden supplies</p>
                     <a href="https://greenthumb.com" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300">Learn More</a>
                 </div>
             </div>
-            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-                <div class="p-6">
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden transform hover:scale-[1.02] border border-gray-100">
+                <div class="relative p-6">
+                    <span class="absolute top-2 right-2 bg-red-100 text-red-600 text-xs font-semibold px-2 py-1 rounded">Health</span>
                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Fitness Zone</h3>
                     <p class="text-gray-600 mb-4">24/7 gym with personal training options</p>
                     <a href="https://fitnesszone.com" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300">Learn More</a>
                 </div>
             </div>
-            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-                <div class="p-6">
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden transform hover:scale-[1.02] border border-gray-100">
+                <div class="relative p-6">
+                    <span class="absolute top-2 right-2 bg-purple-100 text-purple-600 text-xs font-semibold px-2 py-1 rounded">Legal</span>
                     <h3 class="text-xl font-semibold text-gray-800 mb-2">Legal Advisors</h3>
                     <p class="text-gray-600 mb-4">Expert legal consultation for individuals and businesses</p>
                     <a href="https://legaladvisors.com" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300">Learn More</a>
@@ -79,19 +102,19 @@
     <section class="bg-gradient-to-r from-blue-600 to-blue-800 py-16">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Join Our Directory?</h2>
-            <p class="text-white/90 mb-8 text-lg">List your business and reach thousands of potential customers</p>
+            <p class="text-white/90 mb-8 text-lg max-w-2xl mx-auto">List your business and connect with thousands of potential customers actively searching for local services like yours.</p>
             <a href="https://directory.com/register" class="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">Submit Your Listing</a>
         </div>
     </section>
 
-    <section class="container mx-auto px-4 py-16">
+    <section id="about" class="container mx-auto px-4 py-16">
         <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-3xl font-bold text-gray-800 mb-6">About Us</h2>
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">About Our Directory</h2>
             <p class="text-gray-600 leading-relaxed">Our local business directory serves as the premier destination for connecting community members with trusted local businesses. We carefully curate and verify each listing to ensure you have access to the highest quality services and products in your area, making it easier than ever to support and grow our local economy.</p>
         </div>
     </section>
 
-    <footer class="bg-gray-900 text-white py-12">
+    <footer id="contact" class="bg-gray-900 text-white py-12">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
@@ -101,20 +124,22 @@
                 <div>
                     <h3 class="text-xl font-semibold mb-4">Contact</h3>
                     <p class="text-gray-400">contact@directory.com</p>
+                    <p class="text-gray-400">1-800-DIRECTORY</p>
                 </div>
                 <div>
                     <h3 class="text-xl font-semibold mb-4">Legal</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://test-acc-12349.github.io/local-business-directory-2025-05-06-c0f9e/privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://test-acc-12349.github.io/local-business-directory-2025-05-06-c0f9e/terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://test-acc-12349.github.io/local-business-directory-2025-05-06-c0f9e/blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
                 <div>
                     <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Twitter</a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">LinkedIn</a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Facebook</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-facebook"></i></a>
                     </div>
                 </div>
             </div>
@@ -123,5 +148,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+
 </body>
 </html>
